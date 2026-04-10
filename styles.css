@@ -45,7 +45,8 @@ body{
     justify-content: center;
     width: 32px;
     height: 32px;
-    border-radius: 6px;
+    border: none;
+    background-color: #f8f9fa;
 }
 
 .editBtn {
@@ -67,12 +68,16 @@ body{
     border-top: 2px solid #f0f0f0;
 }
 
-.taskInput{
+#taskInput{
     padding: 12px 15px;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     font-size: 16px;
     font-family: inherit;
+}
+
+#taskInput.error{
+    border-color: red;
 }
 
 .addBtn{
@@ -87,4 +92,9 @@ body{
     display: flex;
     align-items: center;
     gap: 8px;  
+}
+
+.newTextInput{
+    background-color: #f8f9fa;
+    border-radius: 5px;
 }
